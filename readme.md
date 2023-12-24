@@ -1,0 +1,1 @@
+Registration form using MERN where User can create their account and inorder to secure user password I create a method which hash the password and then save it to the database.
