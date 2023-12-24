@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration form</title>
+    <title>Registration Form</title>
     <style>
-        /* Custom style to center the form */
         body {
+            background-color: #f8f9fa;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -16,37 +16,51 @@
             margin: 0;
         }
         .form-container {
-            width: 400px;
+            width: 100%;
+            max-width: 400px;
             padding: 20px;
-            border: 1px solid #ccc;
+            background-color: #fff;
+            border: 1px solid #d6d6d6;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-container form {
+            margin-top: 20px;
+        }
+        .form-container .btn-primary {
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <div class="form-container">
+        <h2>Registration Form</h2>
         <form action="/register" method="post">
             <div class="mb-3">
                 <label for="exampleInputName" class="form-label">Name</label>
-                <!-- Add the name attribute for the name field -->
                 <input type="text" class="form-control" id="exampleInputName" name="name" aria-describedby="nameHelp">
                 <div id="nameHelp" class="form-text"></div>
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <!-- Add the name attribute for the email field -->
                 <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Password</label>
-                <!-- Add the name attribute for the password field -->
                 <input type="password" name="password" class="form-control" id="exampleInputPassword1">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-        
     </div>
+
+    <!-- Bootstrap JS and Popper.js scripts (make sure to include them after the Bootstrap CSS) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-bq8fb9BRqD+3Iy73W3kxEHBlJSR9Mz7jKUvHKEdn0TtLbrz9BpKwW9ON/oUge4lP" crossorigin="anonymous"></script>
 </body>
 </html>
